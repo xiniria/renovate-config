@@ -9,5 +9,8 @@
   },
   "author": "Raphaël Dhôte",
   "private": true,
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "renovate": "^23.84.3"
+  }
 }
