@@ -2,7 +2,9 @@
   "name": "renovate-config",
   "version": "0.1.0",
   "description": "Configuration for the renovate bot.",
-  "scripts": {},
+  "scripts": {
+    "renovate": "renovate"
+  },
   "repository": {
     "type": "git",
     "url": "https://gitlab.illuin.tech/3ACentrale/2020-air-monitoring-pwa/renovate-config.git"
