@@ -1,7 +1,17 @@
 image: node:14
 
 stages:
+  - lint
   - run
+
+lint:
+  except:
+    - schedules
+  stage: lint
+  before_script:
+    - npm install
+  script:
+    - npm run lint:ci
 
 run:
   only:
