@@ -5,6 +5,13 @@ stages:
   - audit
   - run
 
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - node_modules
+
 lint:
   except:
     - schedules
