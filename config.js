@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   platform: 'gitlab',
   endpoint: 'https://gitlab.illuin.tech/api/v4',
