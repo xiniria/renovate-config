@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "Configuration for the renovate bot.",
   "scripts": {
+    "lint": "eslint --fix ./*.js ./.eslintrc.js",
+    "lint:ci": "eslint ./*.js ./.eslintrc.js --format stylish",
     "renovate": "renovate",
     "renovate:dry-run": "renovate --dry-run"
   },
