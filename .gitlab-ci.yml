@@ -1,40 +1,45 @@
 image: node:14
 
 stages:
-  - lint
-  - audit
-  - run
+  - Prepare
+  - Lint
+  - Audit
+  - Run
 
-cache:
+cache: &global_cache
   key:
     files:
       - package-lock.json
   paths:
     - node_modules
+  policy: pull
+
+prepare:
+  stage: Prepare
+  cache:
+    # inherit global_cache properties, override policy
+    <<: *global_cache
+    policy: pull-push
+  script:
+    - npm install
 
 lint:
   except:
     - schedules
-  stage: lint
-  before_script:
-    - npm install
+  stage: Lint
   script:
     - npm run lint:ci
 
 audit:
   except:
     - schedules
-  stage: audit
-  before_script:
-    - npm install
+  stage: Audit
   script:
     - npm audit
 
 run:
   only:
     - schedules
-  stage: run
-  before_script:
-    - npm install
+  stage: Run
   script:
     - npm run renovate
