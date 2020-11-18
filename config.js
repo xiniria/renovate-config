@@ -9,6 +9,7 @@ module.exports = {
   repositories: [
     '3ACentrale/2020-air-monitoring-pwa/renovate-config',
     '3ACentrale/2020-air-monitoring-pwa/air-monitoring-backend',
+    '3ACentrale/2020-air-monitoring-pwa/air-monitoring-frontend',
   ],
 
   logLevel: 'info',
