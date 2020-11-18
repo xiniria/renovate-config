@@ -2,6 +2,7 @@ image: node:14
 
 stages:
   - lint
+  - audit
   - run
 
 lint:
@@ -12,6 +13,15 @@ lint:
     - npm install
   script:
     - npm run lint:ci
+
+audit:
+  except:
+    - schedules
+  stage: audit
+  before_script:
+    - npm install
+  script:
+    - npm audit
 
 run:
   only:
