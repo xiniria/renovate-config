@@ -3,7 +3,7 @@ image: node:14
 stages:
   - Prepare
   - Lint
-  - Audit
+  - Security
   - Run
 
 cache: &global_cache
@@ -33,9 +33,16 @@ lint:
 audit:
   except:
     - schedules
-  stage: Audit
+  stage: Security
   script:
     - npm audit
+
+lockfile_lint:
+  except:
+    - schedules
+  stage: Security
+  script:
+    - npm run lockfile-lint
 
 run:
   only:
