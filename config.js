@@ -4,7 +4,6 @@ module.exports = {
   platform: 'gitlab',
   endpoint: 'https://gitlab.illuin.tech/api/v4',
   token: process.env.RENOVATE_TOKEN,
-  gitPrivateKey: process.env.GPG_KEY || '',
 
   repositories: [
     '3ACentrale/2020-air-monitoring-pwa/renovate-config',
