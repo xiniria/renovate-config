@@ -3,6 +3,7 @@ image: node:14
 stages:
   - Prepare
   - Lint
+  - Dry-run
   - Security
   - Run
 
@@ -29,6 +30,13 @@ lint:
   stage: Lint
   script:
     - npm run lint:ci
+
+dry-run:
+  except:
+    - schedules
+  stage: Dry-run
+  script:
+    - npm run renovate:dry-run
 
 audit:
   except:
