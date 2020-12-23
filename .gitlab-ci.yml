@@ -70,6 +70,6 @@ snyk:
       - $IS_SNYK_RUN == "true"
   stage: Security
   before_script:
-    - npm run snyk-auth "$SNYK_TOKEN"
+    - npm run snyk:auth "$SNYK_TOKEN"
   script:
-    - npm run snyk-test
+    - npm run snyk:test
