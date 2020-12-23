@@ -7,7 +7,9 @@
     "lint:ci": "eslint ./*.js ./.eslintrc.js --format stylish",
     "lockfile-lint": "lockfile-lint --path package-lock.json --type npm --validate-https --allowed-hosts npm",
     "renovate": "renovate",
-    "renovate:dry-run": "renovate --dry-run"
+    "renovate:dry-run": "renovate --dry-run",
+    "snyk:auth": "snyk auth",
+    "snyk:test": "snyk test"
   },
   "repository": {
     "type": "git",
