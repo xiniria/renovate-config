@@ -67,8 +67,7 @@ snyk_test:
     refs:
       - schedules
     variables:
-      - $IS_SNYK_RUN == "true"
-      - $IS_WEEKLY_RUN != "true"
+      - $IS_SNYK_RUN == "true" && $IS_WEEKLY_RUN != "true"
   stage: Security
   before_script:
     - npm run snyk:auth "$SNYK_TOKEN"
@@ -80,8 +79,7 @@ snyk_monitor:
     refs:
       - schedules
     variables:
-      - $IS_SNYK_RUN == "true"
-      - $IS_WEEKLY_RUN == "true"
+      - $IS_SNYK_RUN == "true" && $IS_WEEKLY_RUN == "true"
   stage: Security
   before_script:
     - npm run snyk:auth "$SNYK_TOKEN"
