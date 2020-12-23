@@ -54,7 +54,22 @@ lockfile_lint:
 
 run:
   only:
-    - schedules
+    refs:
+      - schedules
+    variables:
+      - $IS_SNYK_RUN != "true"
   stage: Run
   script:
     - npm run renovate
+
+snyk:
+  only:
+    refs:
+      - schedules
+    variables:
+      - $IS_SNYK_RUN == "true"
+  stage: Security
+  before_script:
+    - npm run snyk-auth "$SNYK_TOKEN"
+  script:
+    - npm run snyk-test
