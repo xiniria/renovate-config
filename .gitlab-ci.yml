@@ -62,14 +62,28 @@ run:
   script:
     - npm run renovate
 
-snyk:
+snyk_test:
   only:
     refs:
       - schedules
     variables:
       - $IS_SNYK_RUN == "true"
+      - $IS_WEEKLY_RUN != "true"
   stage: Security
   before_script:
     - npm run snyk:auth "$SNYK_TOKEN"
   script:
     - npm run snyk:test
+
+snyk_monitor:
+  only:
+    refs:
+      - schedules
+    variables:
+      - $IS_SNYK_RUN == "true"
+      - $IS_WEEKLY_RUN == "true"
+  stage: Security
+  before_script:
+    - npm run snyk:auth "$SNYK_TOKEN"
+  script:
+    - npm run snyk:monitor

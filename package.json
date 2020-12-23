@@ -9,6 +9,7 @@
     "renovate": "renovate",
     "renovate:dry-run": "renovate --dry-run",
     "snyk:auth": "snyk auth",
+    "snyk:monitor": "snyk monitor",
     "snyk:test": "snyk test"
   },
   "repository": {
