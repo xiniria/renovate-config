@@ -21,7 +21,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "dotenv": "8.2.0",
-    "renovate": "24.10.4"
+    "renovate": "24.11.3"
   },
   "devDependencies": {
     "eslint": "7.17.0",
