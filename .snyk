@@ -8,4 +8,11 @@ ignore:
           Waiting for an update of trim through remark-parse, remark,
           linkify-markdown and renovate
         expires: '2021-01-22T13:47:55.409Z'
+  SNYK-JS-GLOBPARENT-1016905:
+    - renovate > @yarnpkg/core > @yarnpkg/shell > fast-glob > glob-parent:
+        reason: No fix yet
+        expires: '2021-02-14T00:00:14.605Z'
+    - renovate > @yarnpkg/core > globby > fast-glob > glob-parent:
+        reason: No fix yet
+        expires: '2021-02-14T00:00:14.605Z'
 patch: {}
