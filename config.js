@@ -16,8 +16,6 @@ module.exports = {
     '3ACentrale/2020-air-monitoring-pwa/air-monitoring-frontend',
   ],
 
-  logLevel: 'info',
-
   requireConfig: true,
   onboarding: true,
   onboardingConfig: {
