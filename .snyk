@@ -11,8 +11,8 @@ ignore:
   SNYK-JS-GLOBPARENT-1016905:
     - renovate > @yarnpkg/core > @yarnpkg/shell > fast-glob > glob-parent:
         reason: No fix yet
-        expires: '2021-02-14T00:00:14.605Z'
+        expires: '2021-03-16T16:04:41.949Z'
     - renovate > @yarnpkg/core > globby > fast-glob > glob-parent:
         reason: No fix yet
-        expires: '2021-02-14T00:00:14.605Z'
+        expires: '2021-03-16T16:04:41.949Z'
 patch: {}
