@@ -15,6 +15,9 @@ cache: &global_cache
     - node_modules
   policy: pull
 
+before_script:
+  - npm install --global npm@latest
+
 prepare:
   stage: Prepare
   cache:
@@ -23,7 +26,6 @@ prepare:
     policy: pull-push
   before_script:
     - node --version
-    - npm install --global npm@latest
     - npm --version
   script:
     - npm install
