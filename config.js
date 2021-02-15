@@ -26,6 +26,4 @@ module.exports = {
   enabledManagers: [
     'npm',
   ],
-
-  binarySource: 'docker',
 };
