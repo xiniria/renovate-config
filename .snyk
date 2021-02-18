@@ -15,4 +15,32 @@ ignore:
     - renovate > @yarnpkg/core > globby > fast-glob > glob-parent:
         reason: No fix yet
         expires: '2021-03-16T16:04:41.949Z'
+  SNYK-JS-HANDLEBARS-1056767:
+    - renovate > handlebars:
+        reason: None given
+        expires: '2021-03-20T13:20:02.721Z'
+  SNYK-JS-JSDOM-1075447:
+    - renovate > jsdom:
+        reason: None given
+        expires: '2021-03-20T13:20:02.721Z'
+  SNYK-JS-LODASH-1018905:
+    - renovate > @yarnpkg/core > lodash:
+        reason: None given
+        expires: '2021-03-20T13:20:02.721Z'
+    - renovate > conventional-commits-detector > git-raw-commits > lodash:
+        reason: None given
+        expires: '2021-03-20T13:20:02.721Z'
+    - renovate > jsdom > request-promise-native > request-promise-core > lodash:
+        reason: None given
+        expires: '2021-03-20T13:20:02.721Z'
+  SNYK-JS-LODASH-1040724:
+    - renovate > @yarnpkg/core > lodash:
+        reason: None given
+        expires: '2021-03-20T13:20:02.721Z'
+    - renovate > conventional-commits-detector > git-raw-commits > lodash:
+        reason: None given
+        expires: '2021-03-20T13:20:02.721Z'
+    - renovate > jsdom > request-promise-native > request-promise-core > lodash:
+        reason: None given
+        expires: '2021-03-20T13:20:02.721Z'
 patch: {}
