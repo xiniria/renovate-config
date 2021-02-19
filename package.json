@@ -5,12 +5,12 @@
   "scripts": {
     "lint": "eslint --fix ./*.js ./.eslintrc.js",
     "lint:ci": "eslint ./*.js ./.eslintrc.js --format stylish",
-    "lockfile-lint": "lockfile-lint --path package-lock.json --type npm --validate-https --allowed-hosts npm",
+    "lockfile-lint": "npx lockfile-lint --path package-lock.json --type npm --validate-https --allowed-hosts npm",
     "renovate": "renovate",
     "renovate:dry-run": "renovate --dry-run",
-    "snyk:auth": "snyk auth",
-    "snyk:monitor": "snyk monitor",
-    "snyk:test": "snyk test"
+    "snyk:auth": "npx snyk auth",
+    "snyk:monitor": "npx snyk monitor",
+    "snyk:test": "npx snyk test"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,6 @@
   "devDependencies": {
     "eslint": "7.20.0",
     "eslint-config-airbnb-base": "14.2.1",
-    "eslint-plugin-import": "2.22.1",
-    "lockfile-lint": "4.3.7",
-    "snyk": "1.457.0"
+    "eslint-plugin-import": "2.22.1"
   }
 }
