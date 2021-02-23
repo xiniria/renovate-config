@@ -7,7 +7,7 @@ ignore:
         reason: >-
           Waiting for an update of trim through remark-parse, remark,
           linkify-markdown and renovate
-        expires: '2021-02-23T11:03:00.644Z'
+        expires: '2021-03-25T16:22:59.098Z'
   SNYK-JS-GLOBPARENT-1016905:
     - renovate > @yarnpkg/core > @yarnpkg/shell > fast-glob > glob-parent:
         reason: No fix yet
