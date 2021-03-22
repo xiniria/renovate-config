@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.1
+version: v1.19.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   SNYK-JS-TRIM-1017038:
@@ -11,10 +11,10 @@ ignore:
   SNYK-JS-GLOBPARENT-1016905:
     - renovate > @yarnpkg/core > @yarnpkg/shell > fast-glob > glob-parent:
         reason: No fix yet
-        expires: '2021-03-16T16:04:41.949Z'
+        expires: '2021-04-21T08:06:08.551Z'
     - renovate > @yarnpkg/core > globby > fast-glob > glob-parent:
         reason: No fix yet
-        expires: '2021-03-16T16:04:41.949Z'
+        expires: '2021-04-21T08:06:08.551Z'
   SNYK-JS-HANDLEBARS-1056767:
     - renovate > handlebars:
         reason: None given
@@ -25,21 +25,21 @@ ignore:
         expires: '2021-03-20T13:20:02.721Z'
   SNYK-JS-LODASH-1018905:
     - renovate > @yarnpkg/core > lodash:
-        reason: None given
-        expires: '2021-03-20T13:20:02.721Z'
+        reason: No fix yet
+        expires: '2021-04-21T08:06:08.551Z'
     - renovate > conventional-commits-detector > git-raw-commits > lodash:
-        reason: None given
-        expires: '2021-03-20T13:20:02.721Z'
+        reason: No fix yet
+        expires: '2021-04-21T08:06:08.551Z'
     - renovate > jsdom > request-promise-native > request-promise-core > lodash:
         reason: None given
         expires: '2021-03-20T13:20:02.721Z'
   SNYK-JS-LODASH-1040724:
     - renovate > @yarnpkg/core > lodash:
-        reason: None given
-        expires: '2021-03-20T13:20:02.721Z'
+        reason: No fix yet
+        expires: '2021-04-21T08:06:08.551Z'
     - renovate > conventional-commits-detector > git-raw-commits > lodash:
-        reason: None given
-        expires: '2021-03-20T13:20:02.721Z'
+        reason: No fix yet
+        expires: '2021-04-21T08:06:08.551Z'
     - renovate > jsdom > request-promise-native > request-promise-core > lodash:
         reason: None given
         expires: '2021-03-20T13:20:02.721Z'
