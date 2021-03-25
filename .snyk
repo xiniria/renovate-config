@@ -43,4 +43,20 @@ ignore:
     - renovate > jsdom > request-promise-native > request-promise-core > lodash:
         reason: None given
         expires: '2021-03-20T13:20:02.721Z'
+  SNYK-JS-HOSTEDGITINFO-1088355:
+    - renovate > conventional-commits-detector > meow > normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2021-04-24T12:30:01.638Z'
+    - renovate > linkify-markdown > meow > normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2021-04-24T12:30:01.639Z'
+    - renovate > conventional-commits-detector > meow > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2021-04-24T12:30:01.639Z'
+    - renovate > linkify-markdown > meow > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2021-04-24T12:30:01.639Z'
+    - renovate > conventional-commits-detector > git-raw-commits > meow > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2021-04-24T12:30:01.639Z'
 patch: {}
