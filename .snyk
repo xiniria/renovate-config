@@ -59,4 +59,11 @@ ignore:
     - renovate > conventional-commits-detector > git-raw-commits > meow > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
         reason: None given
         expires: '2021-04-24T12:30:01.639Z'
+  SNYK-JS-UNDERSCORE-1080984:
+    - renovate > azure-devops-node-api > underscore:
+        reason: None given
+        expires: '2021-05-02T06:55:41.702Z'
+    - renovate > azure-devops-node-api > typed-rest-client > underscore:
+        reason: None given
+        expires: '2021-05-02T06:55:41.702Z'
 patch: {}
